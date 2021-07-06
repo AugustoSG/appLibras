@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark-green">
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input name="email" type="email"  [(ngModel)]="login.email"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input name="password" type="number" [(ngModel)]="login.password"></ion-input>
+  </ion-item>
+
+  <!-- <div class="senha"><a>Esqueceu a senha?</a></div> -->
+
+  <div class="bnt">
+    <div class="botoes">
+      <ion-button class="botao" expand="block" color="dark-green" (click)="signIn()">Entrar</ion-button>
+      <ion-button class="botao" expand="block" color="secondary"  [routerLink]="['/signup/']">Cadastrar</ion-button>
+    </div>
+  </div>
+</ion-content>
